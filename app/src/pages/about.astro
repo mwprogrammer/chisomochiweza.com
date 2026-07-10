@@ -1,5 +1,5 @@
 ---
-
+const skills = ["C#", "Golang", "Kotlin", "Javascript/TypeScript", "HTML/CSS"]
 ---
 
 <html lang="en">
@@ -13,6 +13,14 @@
 	</head>
 	<body>
 		<h1>About me.</h1>
-		<h3>I'm a programmer engineering software in Malawi.</h3>
+		<h3>
+			I'm a passionate programmer engineering software in Malawi. I design and implement APIs, microservices and 
+			other backend systems to power experiences within primarily the financial sector. I also build web applications
+			and mobile apps ontop of this infrastructure.
+		</h3>
+		<p>I'm proficient in the following programming languages:</p>
+		<ul>
+			{skills.map((skill) => <li>{skill}</li>)}
+		</ul>
 	</body>
 </html>
