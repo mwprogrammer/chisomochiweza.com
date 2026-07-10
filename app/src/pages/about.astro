@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 const skills = ["C#", "Golang", "Kotlin", "Javascript/TypeScript", "HTML/CSS"]
 ---
 
@@ -20,7 +21,7 @@ const skills = ["C#", "Golang", "Kotlin", "Javascript/TypeScript", "HTML/CSS"]
 		</h3>
 		<p>I'm proficient in the following programming languages:</p>
 		<ul>
-			{skills.map((skill) => <li>{skill}</li>)}
+			{skills.map((skill) => <li class="skill">{skill}</li>)}
 		</ul>
 	</body>
 </html>
