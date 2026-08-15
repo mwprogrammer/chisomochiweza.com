@@ -10,57 +10,82 @@ import '../styles/global.css'
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/3c11efc042.js" crossorigin="anonymous"></script>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Chisomo Chiweza</title>
 	</head>
 	<body>
-		<header>
-			<p>Chisomo Chiweza</p>
-			<nav>			
-				<a href="">Portfolio</a>
-				<a href="">Writing</a>
-				<a href="">Contact</a>
+		<header class="p-6 px-8 flex justify-between border-b border-b-gray-300 shadow-sm shadow-gray-100">
+			<p class="font-mono font-bold text-xl">Chisomo Chiweza</p>
+			<nav class="font-semibold text-gray-600">			
+				<a href="" class="px-4 underline underline-offset-8 decoration-2">Home</a>
+				<a href="" class="px-4">Writing</a>
+				<a href="" class="px-4">Portfolio</a>
 			</nav>
-			<button>Resume</button>
+			<button class="font-semibold text-gray-500 p-2 px-4 border border-gray-300 rounded-lg">Resume</button>
 		</header>		
-		<div>
-			<div>
-				<div>
-					<p>Using System;</p>
-					<p>class Program</p>
-					<p>{'{'}</p>
-					<p>static void Main()</p>
-					<p>{'{'}</p>
-					<p>Console.WriteLine("Hello, I'm Chisomo Chiweza.");</p>
-					<p> {'}'}</p>
-					<p>{'}'}</p>
+		<div class="p-20 bg-gray-100">
+			<div class="rounded-xl mx-32">
+				<div class="p-4 bg-gray-200 rounded-t-xl font-semibold text-white font-mono">
+					<span class="h-3 w-3 inline-block rounded-full bg-gray-100 mx-1"></span>
+					<span class="h-3 w-3 inline-block rounded-full bg-gray-300 mx-1"></span>
+					<span class="h-3 w-3 inline-block rounded-full bg-gray-400 mx-1 mr-3"></span>
+					 bash - chisomo@portfolio - 80X24
 				</div>
-				<div>$ Software Engineer.</div>
-			</div>
-			<div>
-				<p>
-					I am a passionate programmer with focused experience in the design and implementation of software across the entire stack. 
-					I utilize a systems-oriented approach to solving ambiguous business problems, always aiming to architect systems whose 
-					components interact seamlessly to achieve robust service delivery.
-				</p>
-				<button>View Projects</button>
+				<div class="rounded-b-xl p-8 bg-gray-300">
+					<div>
+						<h1 class="font-mono text-gray-200 text-5xl font-bold">System<span class="text-gray-400">.out.</span><span class="text-gray-100">println</span><span class="text-gray-400">(</span><span class="text-white">"Hello, I'm Chisomo"</span><span class="text-gray-400">);</span></h1>
+						<h1 class="py-6 font-medium text-gray-500 text-lg">
+							// I am a passionate programmer with focused experience in the design and implementation of software across the entire stack. <br>
+							// I utilize a systems-oriented approach to solving ambiguous business problems, always aiming to architect systems whose <br>
+							// components interact seamlessly to achieve robust service delivery.
+						</h1>
+					</div>
+					<div class="font-mono text-gray-400 font-bold text-4xl"></div>
+					<div class="font-mono text-gray-400 font-bold text-4xl tracking-wider inline-block after:content-[''] after:inline-block after:h-8 after:w-2 after:bg-gray-400 after:ml-1 after:align-middle after:animate-pulse">
+    				$ <span class="text-gray-100">Software Engineer...</span>
+  					</div>
+				</div>			
 			</div>
 		</div>
 			
 		
-		<div>
-			<h3>CAPABILITIES</h3>
-			<h1>Technical Arsenal</h1>
+		<div class="p-20 bg-gray-200">
+			<h1 class="font-mono font-semibold">CAPABILITIES</h1>
+			<h1 class="font-mono font-bold text-gray-500 text-3xl">Technical Arsenal</h1>
 			<!-- This should be a carousel  -->
-			<div> 
-				<div>C# & .NET</div>
-				<div>Go</div>
-				<div>React.js & TypeScript</div>
-				<div>Kotlin & Android</div>
-				<div>Databases (SQL Server + PostgreSQL)</div>
-				<div>Linux</div>
-				<div>AWS</div>
+			<div class="my-10 font-mono flex font-bold"> 
+				<div class="bg-gray-300 h-50 w-62.5 mr-10 flex flex-col items-center justify-center gap-3 shadow-sm shadow-gray-300">
+					<div class="w-16 h-16 rounded-full bg-gray-200/50 flex items-center justify-center border border-gray-100">
+						<i class="fa-solid fa-terminal text-xl text-gray-800"></i>
+					</div>
+					<span class="text-base font-semibold text-gray-800">C# & .NET</span>
+				</div>
+				<div class="bg-gray-300 h-50 w-62.5 mr-10 flex flex-col items-center justify-center gap-3 shadow-sm shadow-gray-300">
+					<div class="w-16 h-16 rounded-full bg-gray-200/50 flex items-center justify-center border border-gray-100">
+						<i class="fa-brands fa-golang text-xl text-gray-800"></i>
+					</div>
+					<span class="text-base font-semibold text-gray-800">Go</span>
+				</div>
+				<div class="bg-gray-300 h-50 w-62.5 mr-10 flex flex-col items-center justify-center gap-3 shadow-sm shadow-gray-300">
+					<div class="w-16 h-16 rounded-full bg-gray-200/50 flex items-center justify-center border border-gray-100">
+						<i class="fa-solid fa-code text-xl text-gray-800"></i>
+					</div>
+					<span class="text-base font-semibold text-gray-800">React & TypeScript</span>
+				</div>
+				<div class="bg-gray-300 h-50 w-62.5 mr-10 flex flex-col items-center justify-center gap-3 shadow-sm shadow-gray-300">
+					<div class="w-16 h-16 rounded-full bg-gray-200/50 flex items-center justify-center border border-gray-100">
+						<i class="fa-brands fa-android text-xl text-gray-800"></i>
+					</div>
+					<span class="text-base font-semibold text-gray-800">Kotlin + Android</span>
+				</div>
+				<div class="bg-gray-300 h-50 w-62.5 mr-10 flex flex-col items-center justify-center gap-3 shadow-sm shadow-gray-300">
+					<div class="w-16 h-16 rounded-full bg-gray-200/50 flex items-center justify-center border border-gray-100">
+						<i class="fa-solid fa-database text-xl text-gray-800"></i>
+					</div>
+					<span class="text-base font-semibold text-gray-800">Databases</span>
+				</div>
 			</div>
 		</div>
 		<div>
