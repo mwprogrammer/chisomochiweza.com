@@ -13,44 +13,39 @@ import '../styles/global.css'
 		<script src="https://kit.fontawesome.com/3c11efc042.js" crossorigin="anonymous"></script>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Chisomo Chiweza</title>
+		<title>Resume</title>
 	</head>
 	<body class="bg-gray-400 flex flex-col">
 		<header class="p-6 px-8 flex justify-between border-b border-b-gray-300 shadow-sm shadow-gray-100 bg-white">
 			<p class="font-mono font-bold text-xl">Chisomo Chiweza</p>
 			<nav class="font-semibold text-gray-600">			
-				<a href="" class="px-4 underline underline-offset-8 decoration-2">Home</a>
+				<a href="/index/" class="px-4">Home</a>
 				<a href="" class="px-4">Writing</a>
 				<a href="" class="px-4">Portfolio</a>
+                <a href="" class="px-4 underline underline-offset-8 decoration-2">Resume</a>
 			</nav>
 			<button class="font-semibold text-gray-500 p-2 px-4 border border-gray-300 rounded-lg">
-				<a href="/resume/">Resume</a>		
-			</button>
+                Download PDF
+            </button>
 		</header>
 		<main class="grow">
-			<div class="p-20">
-				<div class="rounded-xl mx-32 shadow shadow-gray-200">
-					<div class="p-4 bg-gray-200 rounded-t-xl font-semibold text-white font-mono">
-						<span class="h-3 w-3 inline-block rounded-full bg-gray-100 mx-1"></span>
-						<span class="h-3 w-3 inline-block rounded-full bg-gray-300 mx-1"></span>
-						<span class="h-3 w-3 inline-block rounded-full bg-gray-400 mx-1 mr-3"></span>
-						bash - chisomo@portfolio - 80X24
-					</div>
-					<div class="rounded-b-xl p-8 bg-gray-300">
-						<div>
-							<h1 class="font-mono text-gray-200 text-5xl font-bold">System<span class="text-gray-400">.out.</span><span class="text-gray-100">println</span><span class="text-gray-400">(</span><span class="text-white">"Hello, I'm Chisomo"</span><span class="text-gray-400">);</span></h1>
-							<h1 class="py-6 font-medium text-gray-500 text-lg">
-								// I am a passionate programmer with focused experience in the design and implementation of software across the entire stack. <br>
-								// I utilize a systems-oriented approach to solving ambiguous business problems, always aiming to architect systems whose <br>
-								// components interact seamlessly to achieve robust service delivery.
-							</h1>
-						</div>
-						<div class="font-mono text-gray-400 font-bold text-4xl"></div>
-						<div class="font-mono text-gray-400 font-bold text-4xl tracking-wider inline-block after:content-[''] after:inline-block after:h-8 after:w-2 after:bg-gray-400 after:ml-1 after:align-middle after:animate-pulse">
-						$ <span class="text-gray-100">Software Engineer...</span>
-						</div>
-					</div>			
-				</div>
+			<div class="p-20 grid grid-cols-2 gap-4 md:grid-cols-3">
+				<div class="">
+                    <h1 class="font-mono font-bold text-gray-200 text-3xl">Chisomo Chiweza _</h1>
+                    <h2 class="font-mono font-semibold text-gray-300 text-xl">Full-stack Software Developer</h2>
+                    <p class="text-white text-sm">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi provident similique quis. 
+                        Laborum eaque officiis dolorum magnam voluptas dolor nobis exercitationem asperiores vitae ipsam 
+                        adipisci enim ex dicta vero totam facilis, omnis nisi ea doloribus, assumenda est! Quos itaque 
+                        blanditiis molestias sapiente doloribus at, possimus commodi quasi error, voluptatem repudiandae.
+                    </p>
+                </div>
+                <div class="flex flex-col text-sm font-mono font-semibold p-4 bg-gray-300 rounded">
+                    <a href=""><span><i class="fa-solid fa-envelope"></i></span>work@chisomochiweza.com</a>
+                    <a href="https://www.linkedin.com/in/chisomochiweza/"><span><i class="fa-brands fa-square-linkedin"></i></span>linkedin.com/in/chisomo-chiweza</a>
+                    <a href="https://github.com/mwprogrammer"><span><i class="fa-brands fa-github"></i></span>github.com/mwprogrammer</a>
+                    <a href=""><span><i class="fa-solid fa-location-dot"></i></span>Blantyre, Malawi / Remote</a>
+                </div>
 			</div>
 			
 			<div class="p-20 bg-gray-200">
