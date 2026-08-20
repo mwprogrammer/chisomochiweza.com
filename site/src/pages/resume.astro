@@ -1,190 +1,287 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/3c11efc042.js" crossorigin="anonymous"></script>
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Resume</title>
-	</head>
-	<body class="bg-gray-400 flex flex-col h-screen">
-		<header class="p-6 px-8 flex justify-between border-b border-b-gray-300 shadow-sm shadow-gray-100 bg-white">
-			<p class="font-mono font-bold text-xl">Chisomo Chiweza</p>
-			<nav class="font-semibold text-gray-600">			
-				<a href="/index/" class="px-4">Home</a>
-				<a href="" class="px-4">Writing</a>
-				<a href="" class="px-4">Portfolio</a>
-                <a href="" class="px-4 underline underline-offset-8 decoration-2">Resume</a>
-			</nav>
-			<button class="font-semibold text-gray-500 p-2 px-4 border border-gray-300 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition duration-500 ease-in-out delay-150">
-                Download PDF
-            </button>
-		</header>
-		<main class="grow">
-			<div class="px-20 pt-20 pb-10 grid grid-cols-2 gap-4">
-				<div class="mr-20">
-                    <h1 class="font-mono font-bold text-gray-200 text-4xl">Chisomo Chiweza _</h1>
-                    <h2 class="font-mono font-semibold text-gray-300 text-2xl">Full-stack Software Engineer</h2>
-                    <p class="text-white text-sm my-3">
-						I leverage focused backend expertise in C# and Go to build scalable APIs and microservices, pairing robust system architecture with a product-focused approach that prioritizes the user experience across web and mobile platforms.
-                    </p>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c11efc042.js"
+      crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Resume</title>
+  </head>
+  <body class="bg-gray-400 flex flex-col h-screen">
+    <header
+      class="p-6 px-8 flex justify-between border-b border-b-gray-300 shadow-sm shadow-gray-100 bg-white"
+    >
+      <p class="font-mono font-bold text-xl">Chisomo Chiweza</p>
+      <nav class="font-semibold text-gray-600">
+        <a href="/index/" class="px-4">Home</a>
+        <a href="" class="px-4">Writing</a>
+        <a href="" class="px-4">Portfolio</a>
+        <a href="" class="px-4 underline underline-offset-8 decoration-2"
+          >Resume</a
+        >
+      </nav>
+      <button
+        class="font-semibold text-gray-500 p-2 px-4 border border-gray-300 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition duration-500 ease-in-out delay-150"
+      >
+        Download PDF
+      </button>
+    </header>
+    <main class="grow">
+      <div class="px-20 pt-20 pb-10 grid grid-cols-2 gap-4">
+        <div class="mr-20">
+          <h1 class="font-mono font-bold text-gray-200 text-4xl">
+            Chisomo Chiweza _
+          </h1>
+          <h2 class="font-mono font-semibold text-gray-300 text-2xl">
+            Full-stack Software Engineer
+          </h2>
+          <p class="text-white text-sm my-3">
+            I leverage focused backend expertise in C# and Go to build scalable
+            APIs and microservices, pairing robust system architecture with a
+            product-focused approach that prioritizes the user experience across
+            web and mobile platforms.
+          </p>
+        </div>
+        <div
+          class="flex flex-col text-sm font-mono font-semibold p-4 bg-gray-300 rounded justify-center mx-40"
+        >
+          <a href="" class="my-1">
+            <span><i class="fa-solid fa-envelope mr-3"></i></span>
+            work@chisomochiweza.com
+          </a>
+          <a href="https://www.linkedin.com/in/chisomochiweza/" class="my-1">
+            <span><i class="fa-brands fa-linkedin mr-3"></i></span>
+            linkedin.com/in/chisomo-chiweza
+          </a>
+          <a href="https://github.com/mwprogrammer" class="my-1">
+            <span><i class="fa-brands fa-github mr-3"></i></span>
+            github.com/mwprogrammer
+          </a>
+          <a href="" class="my-1"
+            ><span> <i class="fa-solid fa-location-dot mr-3"></i></span>
+            Blantyre, Malawi / Remote
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-5 gap-20 px-20 pb-20">
+        <div class="col-span-2">
+          <div class="font-mono text-white mb-10">
+            <h1 class="font-semibold my-4">CORE COMPETENCIES</h1>
+            <p
+              class="bg-white/10 border border-white 0 p-1 px-3 rounded-2xl w-fit my-2"
+            >
+              System Architecture & Design
+            </p>
+            <p
+              class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit my-2"
+            >
+              API Development
+            </p>
+            <div class="flex my-2">
+              <p
+                class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit mr-3"
+              >
+                Web Development
+              </p>
+              <p
+                class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit mr-3"
+              >
+                Mobile Development
+              </p>
+            </div>
+            <div class="flex my-2">
+              <p
+                class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit mr-3"
+              >
+                DevOps
+              </p>
+              <p
+                class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit mr-3"
+              >
+                Agile Project Management
+              </p>
+            </div>
+          </div>
+          <div class="font-mono text-white">
+            <h1 class="font-semibold">TECHNICAL MATRIX</h1>
+            <div
+              class="text-sm p-4 py-5 bg-white/20 border border-gray-300 rounded-lg my-4"
+            >
+              <h1 class="font-semibold">Languages</h1>
+              <p class="text-gray-100">
+                C#, Go, JavaScript/TypeScript, HTML/CSS, Kotlin, SQL
+              </p>
+            </div>
+            <div
+              class="text-sm p-4 py-5 bg-white/20 border border-gray-300 rounded-lg my-4"
+            >
+              <h1 class="font-semibold">Frameworks & Tools</h1>
+              <p class="text-gray-100">
+                ASP.NET Core, ReactJS, AstroJS, TailwindCSS, Android, SQL
+                Server, PostgreSQL, RabbitMQ, Redis, OpenTelemetry.
+              </p>
+            </div>
+            <div
+              class="text-sm p-4 py-5 bg-white/20 border border-gray-300 rounded-lg my-4"
+            >
+              <h1 class="font-semibold">Infrastructure</h1>
+              <p class="text-gray-100">
+                Linux (RedHat & Ubuntu), Docker, Kubernetes, Grafana, Nginx.
+              </p>
+            </div>
+          </div>
+          <div class="font-mono text-white">
+            <h1 class="font-semibold py-4">EDUCATION</h1>
+            <div class="border-l-2 border-l-gray-300 px-3">
+              <h1 class="font-mono text-gray-200">Bsc. Computer Science</h1>
+              <p class="font-sans text-sm">
+                University of Malawi &bull; 2017 - 2022
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-3 px-20 pb-20">
+          <h1 class="font-mono text-white font-semibold my-4">
+            EXPERIENCE TIMELINE
+          </h1>
+          <div>
+            <div class="font-mono pb-10">
+              <div class="flex items-start justify-between my-4">
+                <div>
+                  <p class="font-semibold text-gray-300 text-lg">
+                    Software Developer
+                  </p>
+                  <p class="text-sm text-gray-200">NBS BANK</p>
                 </div>
-                <div class="flex flex-col text-sm font-mono font-semibold p-4 bg-gray-300 rounded justify-center mx-40">
-                    <a href="" class="my-1">
-						<span><i class="fa-solid fa-envelope mr-3"></i></span>
-						work@chisomochiweza.com
-					</a>
-                    <a href="https://www.linkedin.com/in/chisomochiweza/" class="my-1">
-						<span><i class="fa-brands fa-linkedin mr-3"></i></span>
-						linkedin.com/in/chisomo-chiweza
-					</a>
-                    <a href="https://github.com/mwprogrammer" class="my-1">
-						<span><i class="fa-brands fa-github mr-3"></i></span>
-						github.com/mwprogrammer
-					</a>
-                    <a href="" class="my-1"><span>
-						<i class="fa-solid fa-location-dot mr-3"></i></span>
-						Blantyre, Malawi / Remote
-					</a>
+                <p
+                  class="uppercase text-sm text-white p-2 rounded-lg bg-white/10"
+                >
+                  Sept 2023 - Present
+                </p>
+              </div>
+              <div
+                class="font-sans text-sm text-gray-100 bg-white/10 border border-gray-300 rounded-xl p-4"
+              >
+                <div class="flex py-2">
+                  <div class="px-2 text-white">&bull;</div>
+                  <p>
+                    Architected and launched an external B2B integration
+                    platform enabling partner institutions to deliver
+                    value-added banking services to end-users; built using a C#
+                    core API, Go microservices, and a React/TypeScript
+                    monitoring dashboard. Currently piloting with 2 external
+                    partners.
+                  </p>
                 </div>
-			</div>
-			<div class="grid grid-cols-5 gap-20 px-20 pb-20">
-				<div class="col-span-2">
-					<div class="font-mono text-white mb-10">
-						<h1 class="font-semibold my-4">CORE COMPETENCIES</h1>
-						<p class="bg-white/10 border border-white 0 p-1 px-3 rounded-2xl w-fit my-2">System Architecture & Design</p>
-						<p class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit my-2">API Development</p>
-						<div class="flex my-2">
-							<p class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit mr-3">Web Development</p>
-							<p class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit mr-3">Mobile Development</p>
-						</div>	
-						<div class="flex my-2">
-							<p class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit mr-3">DevOps</p>
-							<p class="bg-white/10 border border-white p-1 px-3 rounded-2xl w-fit mr-3">Agile Project Management</p>
-						</div>
-					</div>
-					 <div class="font-mono text-white">
-						<h1 class="font-semibold">TECHNICAL MATRIX</h1>
-						<div class="text-sm p-4 py-5 bg-white/20 border border-gray-300 rounded-lg my-4">
-							<h1 class="font-semibold">Languages</h1>
-							<p class="text-gray-100">C#, Go, JavaScript/TypeScript, HTML/CSS, Kotlin, SQL</p>
-						</div>
-						<div class="text-sm p-4 py-5 bg-white/20 border border-gray-300 rounded-lg my-4">
-							<h1 class="font-semibold">Frameworks & Tools</h1>
-							<p class="text-gray-100">
-								ASP.NET Core, ReactJS, AstroJS, TailwindCSS, Android, SQL Server, PostgreSQL,
-								RabbitMQ, Redis, OpenTelemetry.
-							</p>
-						</div>
-						<div class="text-sm p-4 py-5 bg-white/20 border border-gray-300 rounded-lg my-4">
-							<h1 class="font-semibold">Infrastructure</h1>
-							<p class="text-gray-100">
-								Linux (RedHat & Ubuntu), Docker, Kubernetes, Grafana, Nginx.
-							</p>
-						</div>
-					 </div>
-					  <div class="font-mono text-white">
-						<h1 class="font-semibold py-4">EDUCATION</h1>
-						<div class="border-l-2 border-l-gray-300 px-3">
-							<h1 class="font-mono text-gray-200">Bsc. Computer Science</h1>
-							<p class="font-sans text-sm">University of Malawi &bull; 2017 - 2022</p>
-						</div>
-					  </div>
-				</div>
-				<div class="col-span-3 px-20 pb-20">
-					<h1 class="font-mono text-white font-semibold my-4">EXPERIENCE TIMELINE</h1>
-					<div>
-						<div class="font-mono pb-10">
-							<div class="flex items-start justify-between my-4">
-								<div>
-									<p class="font-semibold text-gray-300 text-lg">Software Developer</p>
-									<p class="text-sm text-gray-200">NBS BANK</p>
-								</div>
-								<p class="uppercase text-sm text-white p-2 rounded-lg bg-white/10">Sept 2023 - Present</p>
-							</div>
-							<div class="font-sans text-sm text-gray-100 bg-white/10 border border-gray-300 rounded-xl p-4">
-								<div class="flex py-2">
-									<div class="px-2 text-white">&bull;</div>
-									<p>
-										Architected and launched an external B2B integration platform enabling partner institutions to deliver 
-										value-added banking services to end-users; built using a C# core API, Go microservices, and a 
-										React/TypeScript monitoring dashboard. Currently piloting with 2 external partners.
-									</p>
-								</div>
-								<div class="flex py-2">
-									<div class="px-2 text-white">&bull;</div>
-									<p>
-										Engineered an automated recurring payment system in Go that linked scheduled customer deductions directly 
-										with utility providers, streamlining recurring bill processing. Launched with one utility provider.
-									</p>
-								</div>
-								<div class="flex py-2">
-									<div class="px-2 text-white">&bull;</div>
-									<p>
-										Modernized an internal legacy desktop application into a distributed web architecture using C#, Go 
-										background workers, and React/TypeScript. Slashed batch processing time by ~70% while significantly 
-										enhancing system maintainability and support capabilities.
-									</p>
-								</div>
-								<div class="flex py-2">
-									<div class="px-2 text-white">&bull;</div>
-									<p>
-										Developed core microservices using C# to seamlessly integrate third-party value-added services into 
-										the bank’s primary core architecture.
-									</p>
-								</div>
-								<div class="flex py-2">
-									<div class="px-2 text-white">&bull;</div>
-									<p>
-										Designed and deployed internal tools to digitize paper-dependent processes, advancing company-wide 
-										digital transformation goals.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="font-mono">
-							<div class="flex items-start justify-between my-4">
-								<div>
-									<p class="font-semibold text-gray-300 text-lg">Systems Development Intern</p>
-									<p class="text-sm text-gray-200">ESCOM LIMITED</p>
-								</div>
-								<p class="uppercase text-sm text-white p-2 rounded-lg bg-white/10">July 2023 - September 2023</p>
-							</div>
-							<div class="font-sans text-sm text-gray-100 bg-white/10 border border-gray-300 rounded-xl p-4">
-								<div class="flex py-2">
-									<div class="px-2 text-white">&bull;</div>
-									<p>
-										Researched and built a proof-of-concept for an automated WhatsApp fault reporting platform 
-										using Node.js and Meta Cloud API, contributing to the ESCOM 360 degree effort to digitize customer 
-										electrical fault logging.
-									</p>
-								</div>		
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>		
-		<footer class="p-4 px-20 bg-gray-800">
-			<div class="flex justify-between">
-				<p class="font-semibold text-gray-300">Chisomo Chiweza</p>
-				<nav class="font-semibold text-gray-400">
-					<a href="https://github.com/mwprogrammer" target="_blank" rel="noopener noreferrer" class="px-4">GitHub</a>
-					<a href="https://www.linkedin.com/in/chisomochiweza/" target="_blank" rel="noopener noreferrer" class="px-4">LinkedIn</a>
-					<a href="https://bsky.app/profile/chisomochiweza.com" target="_blank" rel="noopener noreferrer" class="pl-4">BlueSky</a>
-				</nav>
-			</div>
-			<div class="font-semibold text-white text-sm pt-3">
-				&copy; 2026 chisomochiweza.com &bull; Built with Love.
-			</div>
-		</footer>
-	</body>
+                <div class="flex py-2">
+                  <div class="px-2 text-white">&bull;</div>
+                  <p>
+                    Engineered an automated recurring payment system in Go that
+                    linked scheduled customer deductions directly with utility
+                    providers, streamlining recurring bill processing. Launched
+                    with one utility provider.
+                  </p>
+                </div>
+                <div class="flex py-2">
+                  <div class="px-2 text-white">&bull;</div>
+                  <p>
+                    Modernized an internal legacy desktop application into a
+                    distributed web architecture using C#, Go background
+                    workers, and React/TypeScript. Slashed batch processing time
+                    by ~70% while significantly enhancing system maintainability
+                    and support capabilities.
+                  </p>
+                </div>
+                <div class="flex py-2">
+                  <div class="px-2 text-white">&bull;</div>
+                  <p>
+                    Developed core microservices using C# to seamlessly
+                    integrate third-party value-added services into the bank’s
+                    primary core architecture.
+                  </p>
+                </div>
+                <div class="flex py-2">
+                  <div class="px-2 text-white">&bull;</div>
+                  <p>
+                    Designed and deployed internal tools to digitize
+                    paper-dependent processes, advancing company-wide digital
+                    transformation goals.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="font-mono">
+              <div class="flex items-start justify-between my-4">
+                <div>
+                  <p class="font-semibold text-gray-300 text-lg">
+                    Systems Development Intern
+                  </p>
+                  <p class="text-sm text-gray-200">ESCOM LIMITED</p>
+                </div>
+                <p
+                  class="uppercase text-sm text-white p-2 rounded-lg bg-white/10"
+                >
+                  July 2023 - September 2023
+                </p>
+              </div>
+              <div
+                class="font-sans text-sm text-gray-100 bg-white/10 border border-gray-300 rounded-xl p-4"
+              >
+                <div class="flex py-2">
+                  <div class="px-2 text-white">&bull;</div>
+                  <p>
+                    Researched and built a proof-of-concept for an automated
+                    WhatsApp fault reporting platform using Node.js and Meta
+                    Cloud API, contributing to the ESCOM 360 degree effort to
+                    digitize customer electrical fault logging.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="p-4 px-20 bg-gray-800">
+      <div class="flex justify-between">
+        <p class="font-semibold text-gray-300">Chisomo Chiweza</p>
+        <nav class="font-semibold text-gray-400">
+          <a
+            href="https://github.com/mwprogrammer"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-4">GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/chisomochiweza/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-4">LinkedIn</a
+          >
+          <a
+            href="https://bsky.app/profile/chisomochiweza.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pl-4">BlueSky</a
+          >
+        </nav>
+      </div>
+      <div class="font-semibold text-white text-sm pt-3">
+        &copy; 2026 chisomochiweza.com &bull; Built with Love.
+      </div>
+    </footer>
+  </body>
 </html>
