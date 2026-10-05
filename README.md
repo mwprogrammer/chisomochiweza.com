@@ -1,2 +1,3 @@
 # chisomochiweza.com
-My personal website and space for my writing.
+
+My personal website, blog and portfolio.

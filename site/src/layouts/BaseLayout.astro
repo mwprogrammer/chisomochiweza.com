@@ -1,0 +1,39 @@
+---
+import '../styles/global.css' 
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Chisomo Chiweza</title>
+	</head>
+	<body class="bg-[#FAF8FF]">
+		<header class="flex justify-between p-6">
+			<div class="flex">
+				<p class="mx-4 font-bold text-[#3A485B]">Chisomo Chiweza</p>
+				<p class="mx-4 font-semibold text-[#432C00]">FULL-STACK SOFTWARE ENGINEER</p>
+			</div>
+			<nav>
+				<a href="/" class="mx-4">HOME</a>
+				<a href="/about/" class="mx-4">ABOUT</a>
+				<a href="/portfolio/" class="mx-4">PORTFOLIO</a>
+				<a href="/writing/" class="mx-4">WRITING</a>
+			</nav>
+			<nav>
+				<a href="" class="mx-2"> GITHUB</a>
+				<span class="mx-2">/</span>
+				<a href="" class="mx-2"> LINKEDIN</a>
+				<span class="mx-2">/</span>
+				<a href="" class="mx-2"> BLUESKY</a>
+			</nav>
+			<img src="">
+		</header>
+		<main class="h-screen">
+			<slot />
+		</main>
+		<footer></footer>
+	</body>
+</html>
