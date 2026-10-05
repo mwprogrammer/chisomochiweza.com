@@ -4,17 +4,80 @@ import BaseLayout  from "../layouts/BaseLayout.astro";
 
 <BaseLayout>
 	<div>
-		<div>
-			<h1>
-				Passionate about programming, system design and solving problems.
-			</h1>
-			<p>
-				Hi, I'm Chisomo Chiweza. I am a proficient full-stack software engineer passionate about building digital products that allow organizations to streamline and augment their business goals. I have 3 years of experience programming software within the banking and fintech space. My approach is always user-centered, and my goal is to architect systems whose components interact seamlessly to achieve robust service delivery.  
-			</p>
+		<div class="grid grid-cols-2 gap-4 p-10">
 			<div>
-				<button>EXPLORE SELECTED WORK</button>
-				<button>READ MY BLOG</button>
-				<button>RESUME (PDF)</button>
+				<h1 class="font-bold text-5xl">
+					Passionate about programming, system design and building <span class="font-serif italic text-[#7F5700]">user-centered</span> software.
+				</h1>
+				<p class="text-[#281900] my-4">
+					Hi, I'm Chisomo Chiweza. As a full-stack software engineer, I bridge the gap between complex technology and business success by building high-performing digital products. Over the past 3+ years, I've specialized in developing the core software and infrastructure that powers modern payment experiences in the digital banking and fintech space.
+					</p>
+				<div class="text-xs font-semibold my-8">
+					<button class="text-white bg-[#131B2E] px-6 p-2 rounded-sm shadow-sm mr-6">EXPLORE SELECTED WORK</button>
+					<button class="text-[#131B2E] bg-white px-6 p-2 rounded-sm shadow-sm mr-6">READ TECHNICAL WRITING</button>
+					<button class="text-[#604100] border border-[#604100] px-6 p-2 rounded-sm shadow-sm mr-6">RESUME (PDF)</button>
+				</div>
+				<div>
+					<h1 class="text-[#515F74] font-semibold my-4 text-sm">CORE COMPETENCIES</h1>
+					<div class="flex text-sm font-mono text-[#3A485B] font-semibold">
+						<p class="p-1 px-2 bg-[#DAE2FD] rounded-sm">API Development</p>
+						<p class="p-1 px-2 bg-[#DAE2FD] mx-2 rounded-sm">Microservices & Libraries</p>
+						<p class="p-1 px-2 bg-[#DAE2FD] mx-2 rounded-sm">Web Development</p>
+						<p class="p-1 px-2 bg-[#DAE2FD] mx-2 rounded-sm">Mobile Development</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="bg-[#0D1C2E] size-full rounded-xl shadow-xl p-4">
+					<div class="flex">
+						<span class="h-3 w-3 inline-block rounded-full bg-red-500 mx-1"></span>
+						<span class="h-3 w-3 inline-block rounded-full bg-yellow-500 mx-1"></span>
+						<span class="h-3 w-3 inline-block rounded-full bg-green-500 mx-1 mr-3"></span>
+						<p class="font-semibold font-mono text-[#D5E3FC] text-sm">bash - chisomo@workstation:~</p>
+					</div>
+					<div class="text-sm font-mono font-semibold mt-6">
+						<div class="my-6">
+							<p class="text-[#91DB2A] my-2"><span class="text-[#FFEEDA] mx-4">$</span>whoami</p>
+							<p class="text-[#EEF0FF]"><span class="mx-5"></span>chisomo.chiweza <span class="text-[#9EACC3]">(Full-stack software engineer)</span></p>
+						</div>
+						<div>
+							<p class="text-[#91DB2A] my-2"><span class="text-[#FFEEDA] mx-4">$</span>cat bio.json</p>
+							<p class="text-[#9EACC3]"><span class="mx-5"></span>{"{"}</p>
+							<p class="text-[#C08508]"><span class="mx-10"></span>"role"<span class="text-[#9EACC3]">:</span><span class="text-[#91DB2A]">"Full-Stack Software Engineer"</span><span class="text-[#9EACC3]">,</span></p>
+							<p class="text-[#C08508]"><span class="mx-10"></span>"experience"<span class="text-[#9EACC3]">:</span><span class="text-[#91DB2A]">"3+ years in Fintech and Digital Banking"</span><span class="text-[#9EACC3]">,</span></p>
+							<p class="text-[#C08508]"><span class="mx-10"></span>"focus"<span class="text-[#9EACC3]">:</span><span class="text-[#91DB2A]">"Resilient systems, user-centered approach"</span><span class="text-[#9EACC3]">,</span></p>
+							<p class="text-[#C08508]"><span class="mx-10"></span>"stack"<span class="text-[#9EACC3]">:</span><span class="text-[#9EACC3]">[</span><span class="text-[#91DB2A]">"ASP.NET"</span><span class="text-[#9EACC3]">, <span class="text-[#91DB2A]">"Go"</span></span><span class="text-[#9EACC3]">, </span><span class="text-[#91DB2A]">"Javascript/TypeScript"</span><span class="text-[#9EACC3]">, </span><span class="text-[#91DB2A]">"HTML/CSS"</span><span class="text-[#9EACC3]">, </span><span class="text-[#91DB2A]">"Kotlin"</span><span class="text-[#9EACC3]">]</span><span class="text-[#9EACC3]">,</span></p>
+							<p class="text-[#C08508]"><span class="mx-10"></span>"mission"<span class="text-[#9EACC3]">:</span><span class="text-[#91DB2A]">"To build high-performing digital products"</span><span class="text-[#9EACC3]">,</span></p>
+							<p class="text-[#9EACC3]"><span class="mx-5"></span>{"}"}</p>
+						</div>
+						<div class="my-6">
+							<p class="text-[#91DB2A] my-2"><span class="text-[#FFEEDA] mx-4">$</span>status --current</p>
+							<p class="text-[#EEF0FF]"><span class="mx-5"></span>software.developer <span class="text-[#9EACC3]">(NBS Bank Plc)</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-[#EEF0FF] grid grid-cols-4 gap-8 p-10">
+			<div class="bg-white p-6 rounded-lg shadow-sm">
+				<h2 class="text-sm text-[#6F778E] font-bold">TECHNICAL SKILL</h2>
+				<h1 class="my-4 text-2xl text-[#7F5700] font-bold">Languages</h1>
+				<p class="text-sm text-[#281900]">C#, Golang, HTML/CSS, JavaScript/TypeScript</p>
+			</div>
+			<div class="bg-white p-6 rounded-lg shadow-sm">
+				<h2 class="text-sm text-[#6F778E] font-bold">TECHNICAL SKILL</h2>
+				<h1 class="my-4 text-2xl text-[#7F5700] font-bold">Frameworks</h1>
+				<p class="text-sm text-[#281900]">ASP.NET Core, ReactJS, Astro, Android</p>
+			</div>
+			<div class="bg-white p-6 rounded-lg shadow-sm">
+				<h2 class="text-sm text-[#6F778E] font-bold">TECHNICAL SKILL</h2>
+				<h1 class="my-4 text-2xl text-[#7F5700] font-bold">Databases</h1>
+				<p class="text-sm text-[#281900]">Microsoft SQL Server, PostgreSQL</p>
+			</div>
+			<div class="bg-white p-6 rounded-lg shadow-sm">
+				<h2 class="text-sm text-[#6F778E] font-bold">TECHNICAL SKILL</h2>
+				<h1 class="my-4 text-2xl text-[#7F5700] font-bold">Operating Systems</h1>
+				<p class="text-sm text-[#281900]">Windows, Ubuntu Linux, Redhat SE Linux</p>
 			</div>
 		</div>
 	</div>

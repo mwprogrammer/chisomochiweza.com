@@ -1,5 +1,7 @@
 ---
-import '../styles/global.css' 
+import '../styles/global.css'
+import { Image } from 'astro:assets';
+import Profile from "../assets/profile.png" 
 ---
 
 <html lang="en">
@@ -11,25 +13,25 @@ import '../styles/global.css'
 		<title>Chisomo Chiweza</title>
 	</head>
 	<body class="bg-[#FAF8FF]">
-		<header class="flex justify-between p-6">
-			<div class="flex">
-				<p class="mx-4 font-bold text-[#3A485B]">Chisomo Chiweza</p>
-				<p class="mx-4 font-semibold text-[#432C00]">FULL-STACK SOFTWARE ENGINEER</p>
+		<header class="flex justify-between items-center p-4 shadow-xs border-b-amber-50 text-sm">
+			<div class="flex items-center">
+				<Image src={Profile} alt="An avatar image of Chisomo Chiweza." class={"h-8 w-8 rounded-full"} />
+				<p class="mx-4 font-semibold text-[#3A485B]">Chisomo Chiweza</p>
+				<p class="mx-4 font-semibold text-[#604100]">SOFTWARE ENGINEER</p>
 			</div>
-			<nav>
-				<a href="/" class="mx-4">HOME</a>
-				<a href="/about/" class="mx-4">ABOUT</a>
-				<a href="/portfolio/" class="mx-4">PORTFOLIO</a>
-				<a href="/writing/" class="mx-4">WRITING</a>
+			<nav class="text-[#604100]">
+				<a href="/" class="mx-4 hover:text-[#281900] p-1 px-2 rounded-md underline underline-offset-4">HOME</a>
+				<a href="/about/" class="mx-4 hover:text-[#281900]">ABOUT</a>
+				<a href="/portfolio/" class="mx-4 hover:text-[#281900]">PORTFOLIO</a>
+				<a href="/writing/" class="mx-4  hover:text-[#281900]">WRITING</a>
 			</nav>
 			<nav>
-				<a href="" class="mx-2"> GITHUB</a>
-				<span class="mx-2">/</span>
-				<a href="" class="mx-2"> LINKEDIN</a>
-				<span class="mx-2">/</span>
-				<a href="" class="mx-2"> BLUESKY</a>
+				<a href="https://github.com/mwprogrammer" target="_blank" class="mx-2 font-bold text-[#8392A8] hover:text-[#3A485B]"> GITHUB</a>
+				<span class="mx-2 font-bold text-[#FDBA45]">/</span>
+				<a href="https://mw.linkedin.com/in/chisomochiweza" target="_blank" class="mx-2 font-bold text-[#8392A8] hover:text-[#3A485B]"> LINKEDIN</a>
+				<span class="mx-2 font-bold text-[#FDBA45]">/</span>
+				<a href="https://bsky.app/profile/chisomochiweza.com" target="_blank" class="mx-2 font-bold text-[#8392A8] hover:text-[#3A485B]"> BLUESKY</a>
 			</nav>
-			<img src="">
 		</header>
 		<main class="h-screen">
 			<slot />
